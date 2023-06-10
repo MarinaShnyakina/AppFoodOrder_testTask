@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="375dp"
+        android:layout_height="88dp"
+        android:background="@drawable/rectangle_146"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/tabMain"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/tab_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rectangle"
+        app:layout_constraintStart_toStartOf="@+id/rectangle" />
+
+    <ImageView
+        android:id="@+id/tabSearch"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/tab_search"
+        app:layout_constraintBottom_toBottomOf="@+id/tabMain"
+        app:layout_constraintStart_toEndOf="@+id/tabMain"
+        app:layout_constraintTop_toTopOf="@+id/tabMain" />
+
+    <ImageView
+        android:id="@+id/tabBasket"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/tab_basket"
+        app:layout_constraintBottom_toBottomOf="@+id/tabSearch"
+        app:layout_constraintStart_toEndOf="@+id/tabSearch"
+        app:layout_constraintTop_toTopOf="@+id/tabSearch" />
+
+    <ImageView
+        android:id="@+id/tabAccount"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/tab_account"
+        app:layout_constraintBottom_toBottomOf="@+id/tabBasket"
+        app:layout_constraintStart_toEndOf="@+id/tabBasket"
+        app:layout_constraintTop_toTopOf="@+id/tabBasket" />
+
+    <ImageView
+        android:id="@+id/imageSoups"
+        android:layout_width="343dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/soups"
+        android:onClick="pageSoups"/>
+
+    <ImageView
+        android:id="@+id/imageAsian"
+        android:layout_width="343dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageSoups"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/asian"
+        android:onClick="pageAsian"/>
+
+    <ImageView
+        android:id="@+id/imageFastfood"
+        android:layout_width="343dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageAsian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fastfood"
+        android:onClick="pageFastfood"/>
+
+    <ImageView
+        android:id="@+id/imageBakes"
+        android:layout_width="343dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageFastfood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bakes"
+        android:onClick="pageBakes"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
