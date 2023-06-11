@@ -13,9 +13,7 @@ class FoodAdapter: RecyclerView.Adapter<FoodAdapter.FoodHolder>() {
         fun bind(food: Food) = with(binding) {
             imageFood.setImageResource(food.imageId)
             tvTitle.text= food.title
-
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodHolder {
@@ -29,6 +27,11 @@ class FoodAdapter: RecyclerView.Adapter<FoodAdapter.FoodHolder>() {
 
     override fun onBindViewHolder(holder: FoodHolder, position: Int) {
         holder.bind(foodList[position])
+    }
+
+    fun addAllFood(list: List<Food>) {
+        foodList.addAll(list)
+        notifyDataSetChanged()
     }
 
 

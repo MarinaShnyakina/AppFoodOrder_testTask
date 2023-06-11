@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">AppFoodOrder(test)</string>
     <string name="asianFood">Азиатская кухня</string>
+    <string name="soups">Супы</string>
+    <string name="fastfood">Фастфуд</string>
+    <string name="bakes">Пекарни и кондитерские</string>
+    <string name="rice">Рис с овощами</string>
+    <string name="salad">Салат по восточному</string>
+    <string name="fish">Рыба с овощами и рисом</string>
+    <string name="tortellini">Тортеллини</string>
+    <string name="greenSalad">Зеленый салат</string>
+    <string name="rolls">Рулеты из ветчины</string>
+    <string name="main">Главная</string>
+    <string name="search">Поиск</string>
+    <string name="basket">Корзина</string>
+    <string name="account">Аккаунт</string>
 </resources>

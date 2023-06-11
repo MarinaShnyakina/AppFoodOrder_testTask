@@ -8,55 +8,16 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/rectangle"
-        android:layout_width="375dp"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMenu"
+        android:layout_width="0dp"
         android:layout_height="88dp"
         android:background="@drawable/rectangle_146"
+        app:itemIconTint="@drawable/button_nav_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/tabMain"
-        android:layout_width="48dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="34dp"
-        android:background="@drawable/tab_main"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rectangle"
-        app:layout_constraintStart_toStartOf="@+id/rectangle" />
-
-    <ImageView
-        android:id="@+id/tabSearch"
-        android:layout_width="48dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="40dp"
-        android:background="@drawable/tab_search"
-        app:layout_constraintBottom_toBottomOf="@+id/tabMain"
-        app:layout_constraintStart_toEndOf="@+id/tabMain"
-        app:layout_constraintTop_toTopOf="@+id/tabMain" />
-
-    <ImageView
-        android:id="@+id/tabBasket"
-        android:layout_width="48dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="40dp"
-        android:background="@drawable/tab_basket"
-        app:layout_constraintBottom_toBottomOf="@+id/tabSearch"
-        app:layout_constraintStart_toEndOf="@+id/tabSearch"
-        app:layout_constraintTop_toTopOf="@+id/tabSearch" />
-
-    <ImageView
-        android:id="@+id/tabAccount"
-        android:layout_width="48dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="40dp"
-        android:background="@drawable/tab_account"
-        app:layout_constraintBottom_toBottomOf="@+id/tabBasket"
-        app:layout_constraintStart_toEndOf="@+id/tabBasket"
-        app:layout_constraintTop_toTopOf="@+id/tabBasket" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
 
     <ImageView
         android:id="@+id/imageSoups"
@@ -67,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/soups"
-        android:onClick="pageSoups"/>
+        android:onClick="openPageSoups"/>
 
     <ImageView
         android:id="@+id/imageAsian"
@@ -78,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/asian"
-        android:onClick="pageAsian"/>
+        android:onClick="openPageAsian"/>
 
     <ImageView
         android:id="@+id/imageFastfood"
@@ -89,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fastfood"
-        android:onClick="pageFastfood"/>
+        android:onClick="openPageFastfood"/>
 
     <ImageView
         android:id="@+id/imageBakes"
@@ -100,7 +61,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bakes"
-        android:onClick="pageBakes"/>
-
+        android:onClick="openPageBakes"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,15 @@
         android:theme="@style/Theme.AppFoodOrdertest"
         tools:targetApi="31">
         <activity
+            android:name=".Soups"
+            android:exported="false" />
+        <activity
+            android:name=".FastFood"
+            android:exported="false" />
+        <activity
+            android:name=".Bakes"
+            android:exported="false" />
+        <activity
             android:name=".AsianFood"
             android:exported="false" />
         <activity

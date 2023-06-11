@@ -1,7 +1,10 @@
 package com.example.appfoodordertest
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import com.example.appfoodordertest.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -10,6 +13,55 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
     }
+
+    fun openPageSoups(view: View) {
+        binding.imageSoups.setOnClickListener {
+            startActivity(Intent(this, Soups::class.java))
+        }
+    }
+
+    fun openPageAsian(view: View) {
+        binding.imageAsian.setOnClickListener {
+            startActivity(Intent(this, AsianFood::class.java))
+
+        }
+    }
+
+    fun openPageFastfood(view: View) {
+        binding.imageFastfood.setOnClickListener {
+           startActivity(Intent(this, FastFood::class.java))
+
+        }
+    }
+
+    fun openPageBakes(view: View) {
+        binding.imageBakes.setOnClickListener {
+            startActivity(Intent(this, Bakes::class.java))
+
+        }
+    }
+
+    fun switchLowelMenu() {
+        binding.bottomMenu.selectedItemId = R.id.tabMain
+        binding.bottomMenu.setOnNavigationItemReselectedListener {
+            when (it.itemId) {
+                R.id.tabMain -> {
+                    Toast.makeText(this, "Должен открыться главный экран", Toast.LENGTH_LONG).show()
+                }
+                R.id.tabSearch -> {
+                    Toast.makeText(this, "Должен открыться поиск", Toast.LENGTH_LONG).show()
+                }
+                R.id.tabBasket -> {
+                    Toast.makeText(this, "Должна открыться корзина", Toast.LENGTH_LONG).show()
+                }
+                R.id.tabAccount -> {
+                    Toast.makeText(this, "Должен открыться личный кабинет", Toast.LENGTH_LONG).show()
+                }
+            }
+            true
+        }
+    }
+
+
 }
