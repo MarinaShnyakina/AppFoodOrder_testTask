@@ -21,7 +21,15 @@ class AsianFood : AppCompatActivity() {
         init()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = R.drawable.asian.toString()
+        supportActionBar?.title = resources.getString(R.string.asianFood)
+
+
+//        binding.buttonFragment.setOnClickListener {
+//            supportFragmentManager
+//                .beginTransaction()
+//                .replace(R.id.flDish, DishPage.newInstance())
+//                .commit()
+//        }
     }
 
 
@@ -46,4 +54,8 @@ class AsianFood : AppCompatActivity() {
             foodRecycler.adapter = adapter
         }
     }
+
+
+
+
 }

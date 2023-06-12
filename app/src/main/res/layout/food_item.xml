@@ -35,7 +35,7 @@
                 android:id="@+id/tvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="@string/rice"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 android:textSize="14sp"

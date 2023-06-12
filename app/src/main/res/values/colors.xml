@@ -10,4 +10,5 @@
     <color name="backMain">#D8D8D8</color>
     <color name="stateChecked">#3364E0</color>
     <color name="unChecked">#A5A9B2</color>
+    <color name="button">#3364E0</color>
 </resources>

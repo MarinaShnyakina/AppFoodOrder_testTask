@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomMenu"
         android:layout_width="0dp"
@@ -27,8 +26,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/soups"
-        android:onClick="openPageSoups"/>
+        app:srcCompat="@drawable/soups" />
 
     <ImageView
         android:id="@+id/imageAsian"
@@ -38,8 +36,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageSoups"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/asian"
-        android:onClick="openPageAsian"/>
+        app:srcCompat="@drawable/asian" />
 
     <ImageView
         android:id="@+id/imageFastfood"
@@ -49,8 +46,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageAsian"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/fastfood"
-        android:onClick="openPageFastfood"/>
+        app:srcCompat="@drawable/fastfood" />
 
     <ImageView
         android:id="@+id/imageBakes"
@@ -60,7 +56,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageFastfood"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bakes"
-        android:onClick="openPageBakes"/>
+        app:srcCompat="@drawable/bakes" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

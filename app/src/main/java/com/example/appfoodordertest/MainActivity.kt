@@ -13,29 +13,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        openPageSoups()
+        openPageAsian()
+        openPageBakes()
+        openPageFastfood()
+        switchLowelMenu()
     }
 
-    fun openPageSoups(view: View) {
+    fun openPageSoups() {
         binding.imageSoups.setOnClickListener {
             startActivity(Intent(this, Soups::class.java))
         }
     }
 
-    fun openPageAsian(view: View) {
+    fun openPageAsian() {
         binding.imageAsian.setOnClickListener {
             startActivity(Intent(this, AsianFood::class.java))
 
         }
     }
 
-    fun openPageFastfood(view: View) {
+    fun openPageFastfood() {
         binding.imageFastfood.setOnClickListener {
            startActivity(Intent(this, FastFood::class.java))
 
         }
     }
 
-    fun openPageBakes(view: View) {
+    fun openPageBakes() {
         binding.imageBakes.setOnClickListener {
             startActivity(Intent(this, Bakes::class.java))
 

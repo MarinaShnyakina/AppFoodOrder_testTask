@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/main"
+        android:id="@+id/tabMain"
+        android:icon="@drawable/tab_main"
+        android:orderInCategory="100"
+        />
+
+    <item
+        android:title="@string/search"
+        android:id="@+id/tabSearch"
+        android:icon="@drawable/tab_search"
+        android:orderInCategory="200"
+        />
+
+    <item
+        android:title="@string/basket"
+        android:id="@+id/tabBasket"
+        android:icon="@drawable/tab_basket"
+        android:orderInCategory="300"
+        />
+
+    <item
+        android:title="@string/account"
+        android:id="@+id/tabAccount"
+        android:icon="@drawable/tab_account"
+        android:orderInCategory="400"
+        />
+
+</menu>
